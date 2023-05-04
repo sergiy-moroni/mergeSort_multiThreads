@@ -81,7 +81,7 @@ int main() {
     cout << "array constructed" << endl;
     cout << endl;
     mergeSort(arr, 0, arrsize-1);
-    cout << "array sorted by multi threads" << endl;
+    cout << "array sorted by solo threads" << endl;
     time(&end);
     double seconds = difftime(end, start);
     printf("The time: %f seconds\n", seconds);
@@ -95,7 +95,7 @@ int main() {
     cout << "array constructed" << endl;
     cout << endl;
     mergeSort(arr, 0, arrsize - 1);
-    cout << "array sorted by solo thread" << endl;
+    cout << "array sorted by multi thread" << endl;
     time(&end);
     seconds = difftime(end, start);
     printf("The time: %f seconds\n", seconds);
